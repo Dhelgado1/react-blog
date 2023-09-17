@@ -1,0 +1,24 @@
+import { Link } from 'react-router-dom'
+import './registerPage.css'
+
+export default function registerPage() {
+  return (
+    <div className='register'>
+      <span className="registerTitle">Register</span>
+        <form className="registerForm">
+        <label>Email</label>
+        <input type="text" className="registerInput" placeholder="Enter your email..." />
+        <label>Username</label>
+        <input type="text" className="registerInput" placeholder="Enter your username..." />
+        <label>Password</label>
+        <input type="text" placeholder="Enter your password..." />
+        <button className="registerButton">Register</button>
+        </form>
+        <button className="registerLoginButton">
+        <Link className='link' to="/login">Login</Link>
+        </button>
+
+        
+        </div>
+  )
+}
